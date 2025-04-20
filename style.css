@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  header {
+    background: #1e3a8a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav {
+    background: #e5e7eb;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #1e1e1e;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  nav ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e63946;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+  }
+  nav ul li a:hover {
+    color: #e63946;
+  }
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    margin: 50px;
+    gap: 10px;
+  }
+  
+  .sidebar {
+    width: 25%;
+    background: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .sidebar:hover {
+    background: #d1d5db;
+  }
+    
+  .sidebar ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  .sidebar ul li a:hover {
+    color: #e63946;
+  }
+  
+  .content {
+    width: 75%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .content table,
+  .content table td {
+    border: none;
+    border-radius: 10px;
+  }
+  .sidebar h2,
+  .content h2 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+  }
+  footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; /* Jarak dari tombol */
+  }
+
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #1e3a8a;
+  }
+  
+  form input[type="text"],
+  form textarea {
+    padding: 10px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  form input[type="text"]:focus,
+  form textarea:focus {
+    border-color: #e63946;
+  }
+  
+  form button {
+    padding: 12px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #d62828;
+  }
+  
+  
+
+  #formWA {
+    background-color: #fff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  #formWA label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #formWA input,
+  #formWA textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  #formWA input:focus,
+  #formWA textarea:focus {
+    border-color: #25D366;
+    outline: none;
+    box-shadow: 0 0 4px rgba(37, 211, 102, 0.3);
+  }
+  
+  #formWA button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #formWA button:hover {
+    background-color: #1ebe5d;
+  }
+
+
+  /* Style umum untuk home dan contact */
+.home,
+.contact {
+  background-color: #f0f0f0; /* Warna background sama */
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Judul utama */
+.home h1,
+.contact h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Paragraf */
+.home p,
+.contact p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Form di contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #333;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #555;
+}
+
+
